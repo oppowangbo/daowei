@@ -39,18 +39,21 @@ html, body {
     margin-right: 50px;
 
 }
+/*好好看看这哪里出的问题*/
+/*.header-ul li:first-child > a {*/
+    /*vertical-align: middle;*/
+/*}*/
 
-ul li:first-child > a {
-    vertical-align: top;
-}
-
-li a {
+.navbar-right  li a {
     padding: 10px 15px;
     color: #121212;
     fold-weight: bold;
     line-height: 20px;
     /*font-size: 16px;*/
     font: 16px/1.5 latoregular, Verdana, sans-serif;
+}
+.header-ul .active{
+    color: red;
 }
 
 li a:hover {
@@ -74,6 +77,8 @@ li a img {
     font: 16px/1.5 latoregular, Verdana, sans-serif;
 
 }
+
+
 
 /*轮播图*/
 
@@ -131,13 +136,27 @@ li a img {
     font-size: 18px;
     font-weight:bold;
 }
+.tab_detail{
+    position: absolute;
+    top:1px;
+    left: 181px;
+    width:180px;
+    height:420px ;
+    background: mediumvioletred;
+    text-align: center;
+    display: none;
+}
 .tab li:hover{
     background: red;
 }
 
 .tab li span{
     color:#fff;
-    margin-right: 50px;
+    margin-right: 28px;
+    margin-left: 27px;
+}
+.tab_detail a {
+    color:black;
 }
 
 /*家庭保洁*/
